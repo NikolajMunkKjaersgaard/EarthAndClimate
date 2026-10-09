@@ -54,8 +54,7 @@ def load_glacier_properties(path=PROPERTIES_FILE) -> pd.DataFrame:
     :param path: Path to S3_glacierproperties.txt
     :return: DataFrame indexed by glacier ID, one row per glacier, in file order
     '''
-    # skipinitialspace: numbers and 'NaN' are right-aligned with leading spaces (e.g. ' NaN')
-    props = pd.read_csv(path, sep='\t', skipinitialspace=True, na_values=['NaN', str(MISSING)])
+    props = pd.read_csv(path, sep='\t', na_values=['NaN', str(MISSING)])
     # Header cells carry trailing spaces ('name ', 'ID ', ...) and names are space padded
     props.columns = props.columns.str.strip()
     props = props.rename(columns=PROPERTY_COLUMNS)
@@ -74,6 +73,12 @@ def load_length_records(path=LENGTHRECORDS_FILE) -> pd.DataFrame:
     '''
     with open(path) as f:
         header = f.readline().rstrip('\n').split('\t')
+
+    raw = pd.read_csv(path, sep='\t', header=None, skiprows=2).to_numpy()
+
+    if len(header) % 3 == 2 and raw.shape[1] % 3 == 0:
+        header.append('')
+
     n_glaciers = len(header) // 3
     names = [s.strip() for s in header[0:3 * n_glaciers:3]]
     ids = [int(s) for s in header[1:3 * n_glaciers:3]]

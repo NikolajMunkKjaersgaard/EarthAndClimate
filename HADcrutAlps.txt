@@ -1,0 +1,202 @@
+# tas_mean [Celsius] annual mean of blended air_temperature_anomaly over land with sea_water_temperature_anomaly
+# file :: /data/climexp_persistent_cache/climexp/data/ihadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su.dat
+# description :: HadCRUT5.1 SST/T2m anom 5-15E 45-50N firstyear-lastyear 5lan
+# minimal_valid_fraction ::  30.00
+# olderfile :: /data/climexp_data_collection/UKMOData/HadCRUT.5.1.0.0.median.nc
+# comment :: \n2m air temperature over land blended with sea water temperature at a depth of 20cm expressed as monthly anomalies relative to 1961-1990 climatology.
+# institution :: KNMI Climate Explorer and Met Office Hadley Centre / Climatic Research Unit, University of East Anglia
+# licence :: HadCRUT5 is licensed under the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3
+# reference :: C. P. Morice, J. J. Kennedy, N. A. Rayner, J. P. Winn, E. Hogan, R. E. Killick, R. J. H. Dunn, T. J. Osborn, P. D. Jones and I. R. Simpson (2021), An updated assessment of near-surface temperature change from 1850: the HadCRUT5 data set, Journal of Geophysical Research: Atmospheres, 126, e2019JD032361. https://doi.org/10.1029/2019JD032361
+# source :: CRUTEM.5.1.0.0 HadSST.4.1.1.0
+# version :: HadCRUT.5.1.0.0
+# url :: https://www.metoffice.gov.uk/hadobs/hadcrut5/
+# nco :: netCDF Operators version 5.3.3 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco, Citation = 10.1016/j.envsoft.2008.03.004)
+# geospatial_lat_max ::     90.0
+# geospatial_lon_min ::   -180.0
+# geospatial_lon_units :: degrees_east
+# geospatial_lon_resolution ::      5.0
+# time_coverage_start :: 1850-01-15
+# time_coverage_end :: 2026-07-15
+# climexp_url :: https://climexp.knmi.nl/select.cgi?hadcrut5
+# scripturl01 :: http://climexp.knmi.nl/get_index.cgi?delta_lat=4.86&delta_lon=4.93&email=74a0553e877355914a61a7a0e19f14c6&field=hadcrut5&gridpoints=false&intertype=nearest&lat1=45&lat2=50&lat_max=87.50&lat_min=-87.50&lon1=5&lon2=15&lon_max=177.50&lon_min=-177.50&masktype=5lan&minfac=30&standardunits=standardunits&year_max=2026&year_min=1850
+# ave_region :: lon=    5.000   15.000, lat=   45.000   50.000
+# title :: spatial statistic of HadCRUT.5.1.0.0 blended land air temperature and sea-surface temperature anomaly data set
+# scripturl02 :: http://climexp.knmi.nl/daily2longer.cgi?EMAIL=74a0553e877355914a61a7a0e19f14c6&NAME=mean&NPERYEAR=12&STATION=HadCRUT5.1_SST/T2m_anom_5-15E_45-50N_firstyear-lastyear_5lan&TYPE=i&WMO=hadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su&addoption=add_anom&minfac=30&nperyearnew=1&oper=mean&runningmean=1&sum=1
+# history ::  2026-10-06 20:27:25 bin/daily2longer data/ihadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su.dat 1 mean add_anom minfac 30 runningmeanforwards hadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su_mean1_anom_30_runningmeanforwards\n 2026-10-06 20:26:35 dat2nc ./data/ihadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su.dat i HadCRUT5.1_SST/T2m_anom_5-15E_45-50N_firstyear-lastyear_5lan ./data/ihadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su.nc\n 2026-10-06 20:26:35 bin/get_index /data/climexp_data_collection/UKMOData/HadCRUT.5.1.0.0.median.nc 5 15 45 50 dipole no year1 -999 year2 -999 minfac 30 nearest lsmask /data/climexp_data_collection/UKMOData/lsmask_5.nc 5lan standardunits hadcrut5_5-15E_45-50N_firstyear-lastyear_n_5lan_su\nFri Sep 25 10:31:14 2026: ncatted -a url,global,a,c,https://www.metoffice.gov.uk/hadobs/hadcrut5/ HadCRUT.5.1.0.0.median.nc\nData set built at: 2026-09-07T10:43:28+00:00
+ 1850  -1.091517    
+ 1851  -1.324439    
+ 1852 -0.8786680E-01
+ 1853  -1.163786    
+ 1854 -0.7910598    
+ 1855  -1.333740    
+ 1856 -0.6159530    
+ 1857 -0.4090620    
+ 1858  -1.197459    
+ 1859  0.1834607    
+ 1860  -1.405188    
+ 1861 -0.3552828    
+ 1862  0.4377747    
+ 1863  0.5026981    
+ 1864  -1.480382    
+ 1865 -0.4967270E-01
+ 1866  0.9117458E-01
+ 1867 -0.3168007    
+ 1868  0.4881684    
+ 1869 -0.3293324    
+ 1870  -1.220982    
+ 1871  -1.574271    
+ 1872  0.4427735    
+ 1873 -0.2838990E-01
+ 1874 -0.7569616    
+ 1875 -0.9760807    
+ 1876 -0.4361347    
+ 1877 -0.3163006    
+ 1878 -0.7073931    
+ 1879  -1.687197    
+ 1880 -0.2838114    
+ 1881 -0.8287773    
+ 1882 -0.3422570    
+ 1883 -0.9301401    
+ 1884 -0.3562276    
+ 1885 -0.5479943    
+ 1886 -0.4534217    
+ 1887  -1.550532    
+ 1888  -1.414377    
+ 1889  -1.311745    
+ 1890  -1.303366    
+ 1891  -1.247729    
+ 1892 -0.7089655    
+ 1893 -0.5059731    
+ 1894 -0.4961456    
+ 1895 -0.9296858    
+ 1896  -1.092501    
+ 1897 -0.2446558    
+ 1898  0.2030952    
+ 1899 -0.2153020    
+ 1900  0.9955961E-01
+ 1901 -0.9789766    
+ 1902 -0.7842852    
+ 1903 -0.4509960    
+ 1904  0.2075357E-01
+ 1905 -0.7097236    
+ 1906 -0.5194482    
+ 1907 -0.5539095    
+ 1908 -0.9182746    
+ 1909  -1.141957    
+ 1910 -0.4989983    
+ 1911  0.2226904    
+ 1912 -0.8226094    
+ 1913 -0.3298911    
+ 1914 -0.5704534    
+ 1915 -0.5871182    
+ 1916 -0.8959419E-01
+ 1917  -1.042562    
+ 1918 -0.2557110    
+ 1919  -1.017356    
+ 1920  0.3694723    
+ 1921  0.5115389    
+ 1922 -0.8218734    
+ 1923 -0.1599021E-01
+ 1924 -0.6534914    
+ 1925 -0.4935773    
+ 1926  0.2204711    
+ 1927 -0.5824912E-01
+ 1928  0.2216364    
+ 1929 -0.6950164    
+ 1930  0.2414722    
+ 1931 -0.8666173    
+ 1932 -0.3132175    
+ 1933 -0.8696396    
+ 1934  0.5687789    
+ 1935 -0.3359453    
+ 1936 -0.7124411E-01
+ 1937  0.8774319E-01
+ 1938 -0.1992927    
+ 1939 -0.3717387    
+ 1940  -1.387309    
+ 1941  -1.092163    
+ 1942 -0.5110240    
+ 1943  0.5803609    
+ 1944 -0.4529258    
+ 1945  0.3740635    
+ 1946  0.2061879    
+ 1947  0.6548700    
+ 1948  0.5348037    
+ 1949  0.7155114    
+ 1950  0.4989234    
+ 1951  0.4174951    
+ 1952 -0.8655632E-01
+ 1953  0.3732992    
+ 1954 -0.5941512    
+ 1955 -0.5017376    
+ 1956  -1.337858    
+ 1957  0.2294424    
+ 1958  0.7368639E-01
+ 1959  0.6475351    
+ 1960  0.7563379E-01
+ 1961  0.8244504    
+ 1962 -0.8946558    
+ 1963 -0.8831510    
+ 1964  0.6526075E-01
+ 1965 -0.7235808    
+ 1966  0.3341248    
+ 1967  0.3676491    
+ 1968 -0.1733284    
+ 1969 -0.3805963    
+ 1970 -0.3815561    
+ 1971  0.8855879E-02
+ 1972 -0.3576646    
+ 1973 -0.2029953    
+ 1974  0.3569562    
+ 1975  0.3514667    
+ 1976  0.1623007    
+ 1977  0.3382650    
+ 1978 -0.5714629    
+ 1979 -0.1326686    
+ 1980 -0.6662752    
+ 1981 -0.4181968E-01
+ 1982  0.5711885    
+ 1983  0.6351614    
+ 1984 -0.3851965    
+ 1985 -0.5123626    
+ 1986 -0.1049352    
+ 1987 -0.2742849    
+ 1988  0.7502679    
+ 1989  0.9267775    
+ 1990  0.9748130    
+ 1991  0.9491504E-01
+ 1992   1.046599    
+ 1993  0.4827881    
+ 1994   1.716946    
+ 1995  0.6212911    
+ 1996 -0.4554937    
+ 1997  0.8309841    
+ 1998  0.8459201    
+ 1999  0.9223440    
+ 2000   1.554250    
+ 2001  0.8898393    
+ 2002   1.484033    
+ 2003   1.403685    
+ 2004  0.7011737    
+ 2005  0.4828472    
+ 2006   1.135505    
+ 2007   1.515836    
+ 2008   1.162349    
+ 2009   1.097783    
+ 2010 -0.3143349E-02
+ 2011   1.581487    
+ 2012   1.114052    
+ 2013  0.6887848    
+ 2014   2.102889    
+ 2015   1.975440    
+ 2016   1.399860    
+ 2017   1.491704    
+ 2018   2.383040    
+ 2019   2.068848    
+ 2020   2.171257    
+ 2021  0.9820322    
+ 2022   2.581910    
+ 2023   2.578716    
+ 2024   2.586085    
+ 2025   2.093035    
+ 2026   3.051026    
